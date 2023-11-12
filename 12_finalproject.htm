@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Creater" content="My Name is Sriram and i am the Creater of this Code">
+    <link rel="icon" href="favicon-32x32.png" type="image/x-icon"  >
+    <title>V hotel</title>
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Raleway:ital,wght@1,300&display=swap');
+  body{ 
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Raleway', sans-serif;
+        font-size: 12px;
+    }
+    li{
+        font-size: 16px;
+    }
+        h1{
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Raleway', sans-serif;
+        }
+        table{
+            margin:auto;
+        }
+        table,th,td,tr{
+            border: 1px solid black;
+            text-align: center;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        img{
+            border: 1px solid black;
+            border-radius: 7px;
+            margin-inline: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        form{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>V HOTEL</h1>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="#Foodmenu">Food Order Menu</a></li>
+                <li><a href="#hotelrooms">Hotel Room Booking</a></li>
+                <li><a href="#Feedback">FeedBack</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 id="Foodmenu">Food Menu</h2>
+        <hr>
+        <div><ul>
+            <li>
+                <h3>Non Veg Items</h3>
+                    <img src="biryani.jpeg" alt="biryani" height="150px" width="175px">
+                    <img src="pulav.jpeg" alt="pulav" height="150px" width="175px">
+                    <img src="eggfry.jpeg" alt="eggfry" height="150px" width="175px">
+                    <img src="chicken65.jpeg" alt="idk" height="150px" width="175px">
+            </li>
+            <li>
+                <h3>Veg Items</h3>
+                <img src="veg1.jpeg" alt="veg1" height="150px" width="175px">
+                <img src="veg2.jpeg" alt="veg2" height="150px" width="175px">
+                <img src="veg3.jpeg" alt="veg3" height="150px" width="175px">
+                <img src="veg4.jpeg" alt="veg4" height="150px" width="175px">
+            </li>
+            <li>
+                <h3>Deserts</h3>
+                <img src="de1.jpeg" alt="de1" height="150px" width="175px">
+                <img src="de2.jpeg" alt="deg2" height="150px" width="175px">
+                <img src="de3.jpeg" alt="de3" height="150px" width="175px">
+                <img src="de4.jpeg" alt="de4" height="150px" width="175px">
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <h2 id="hotelrooms">The Hotel Booking</h2>
+    <hr>
+    <br>
+    <br>
+        <div>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Single Bed Room</th>
+                    <th>Double Bed Room</th>
+                    <th>Villa</th>
+                    <th>Guest House</th>
+                </tr>
+                <tr>
+                    <td>1 Day</td>
+                    <td>200$</td>
+                    <td>400$</td>
+                    <td>800$</td>
+                    <td>1000$</td>
+                </tr>
+                <tr>
+                    <td>2 Day</td>
+                    <td>250$</td>
+                    <td>450$</td>
+                    <td>900$</td>
+                    <td>1100$</td>
+                </tr>
+                <tr>
+                    <td>4 Day</td>
+                    <td>400$</td>
+                    <td>600$</td>
+                    <td>1100$</td>
+                    <td>1500$</td>
+                </tr>
+                <tr>
+                    <td>7 Day</td>
+                    <td>700$</td>
+                    <td>1000$</td>
+                    <td>1500$</td>
+                    <td>2000$</td>
+                </tr>
+                <tr>
+                    <th colspan="5">Happy Stay !</th>
+                </tr>
+            </table>
+            <br>
+            <br>
+        </div>
+        <hr>
+    <h2>Book Here:</h2>
+    <div>
+        <form action="">
+            <p>
+           <label for="Name" >Name:</label>
+            <input type="text" name="Name" id="Name">
+            </p>
+        <p>
+            <label for="Age">Age :</label>
+            <input type="number" id="Age" min="18" max="70">
+        </p>
+        <p>
+            <label for="phone">Number:</label>
+            <input type="tel" id="phone" >
+        </p>
+        <p>
+         <label for="Room">Select the Room :</label>
+            <input type="text" id="Room" list="ROOMS">
+            <datalist id="ROOMS">            
+            <option >Single Bed Room</option>
+            <option selected >Double Bed Room</option>
+            <option>Villa</option>
+            <option>Guest House</option>
+            </datalist>
+        </p>
+        </form>
+    </div>
+    <hr>
+    </main>
+    <footer>
+        <h2>Enter Your Feed Back:</h2>
+        <form action="">
+            <textarea name="Feedback" id="Feedback" cols="30" rows="10" placeholder="Feedback...."></textarea>
+        </form>
+        <br>
+        <br>
+        &copy;V HOTEL
+    </footer>
+    <hr>
+</body>
+</html>
